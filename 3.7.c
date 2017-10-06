@@ -3,7 +3,7 @@
 
 int main()
 {
-    int i, n, m, s;
+    int i, n, m, s, j, q;
     scanf("%d", &n);
     scanf("%d", &m);
     s = m*n;
@@ -12,19 +12,19 @@ int main()
     {
         A[i]=i;
     }
-    for(i=1; i<s+1; i++)
+    for(j=1; j<s+1; j++)
     {
-        if (i%n==0)
+        if (j%n==0)
         {
-            B[i]=n;
+            B[j]=n;
         }
-        B[i]=i%n;
+        B[j]=j%n;
     }
-    for(i=1; i<s+1; i++)
+    for(q=1; q<s+1; q++)
     {
-        if (i%m==0)
+        if (q%m==0)
         {
-            C[n]+=B[i];
+            C[]+=B[q];
         }
     }
     printf("%d %d %d", C[-3], C[-2], C[-1]);
