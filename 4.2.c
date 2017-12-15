@@ -22,17 +22,16 @@ int main()
             max = B[i];
         }
     }
-    max = 1001;
 
     int X, Y = B[0], num = 0;
-    for(i = 0; i < 100; i++)
+    for(i = 0; i < 10000; )
     {
         b = 0;
         for(j = 0; j < n; j++)
         {
             if (A[j] != max)
             {
-                if ((A[j] <= i) && (B[j] - A[j]) >= b && (B[j] > Y))
+                if ((A[j] <= i) && (B[j] - A[j]) >= b && (B[j] >= Y))
                 {
                     b = (B[j] - A[j]);
                     X = A[j];
@@ -49,4 +48,3 @@ int main()
         i = Y;
     }
 }
-

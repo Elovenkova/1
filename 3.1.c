@@ -4,19 +4,14 @@
 int main()
 {
     int n, max, i;
-    scanf ("%d", &n);
-    int array[n];
-    for(i=0; i<n; i++)
+    scanf("%d", &n);
+    scanf("%d", &max);
+    for(i = 1; i < n; i++)
     {
-        scanf("%d", &array[i]);
-    }
-    max = array[0];
-    for(i=0; i<n; i++)
-    {
-        if (array[i]>=max)
-        {
-            max=array[i];
-        }
+        int item;
+        scanf("%d", &item);
+        if (item >= max)
+            max = item;
     }
     printf("%d", max);
 }

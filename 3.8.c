@@ -1,7 +1,3 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <math.h>
-
 int main()
 {
     double a, b;
@@ -9,11 +5,11 @@ int main()
     scanf ("%lf", &b);
     while ((b-a) > 0.0000000001)
     {
-        if (tan((b+a)/2)>0)
+        if (tan((b+a)/2) - ((b+a)/2)>0)
         {
             b = (b+a)/2;
         }
-        else if (tan((b+a)/2)<0)
+        else if (tan((b+a)/2) - ((b+a)/2)<0)
         {
             a = (b+a)/2;
         }
